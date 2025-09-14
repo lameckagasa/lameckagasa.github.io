@@ -1,24 +1,109 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Lameck Agasa | Biostatistician</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lameck Ondieki Agasa — Academic Profile</title>
+  <meta name="description" content="Biostatistician & researcher in Bayesian statistics, causal inference, and spatio-temporal infectious disease modeling." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Hi, I'm Lameck Ondieki Agasa 👋</h1>
-  <p>I am a biostatistician and researcher specializing in Bayesian statistics, causal inference, 
-  and spatio-temporal modeling of infectious diseases.</p>
-  
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Dengue & Chikungunya modeling</li>
-    <li>Causal inference in malaria and vitamin A deficiency</li>
-    <li>Computational biology & epidemiology</li>
-  </ul>
-  
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:lameckagasa@gmail.com">lameckagasa@gmail.com</a></p>
-  <p>Google Scholar: <a href="https://scholar.google.com/citations?user=YP5QOCMAAAAJ&hl=en">Scholar Profile</a></p>
-  <p>ORCID: <a href="https://orcid.org/0000-0002-3740-8865">0000-0002-3740-8865</a></p>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <img class="avatar" src="assets/lameck.jpg" alt="Profile photo of Lameck Ondieki Agasa" />
+    <div class="title-wrap">
+      <h1>Lameck Ondieki Agasa</h1>
+      <p class="subtitle">Biostatistician & Researcher</p>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#software">Software</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section id="about">
+      <h2>Biostatistician & Infectious Disease Modeler</h2>
+      <p>
+        I am a biostatistician and researcher specializing in <strong>Bayesian statistics</strong>,
+        <strong>causal inference</strong>, and <strong>spatio-temporal modeling</strong> of infectious diseases.
+        My work applies data-driven approaches to strengthen <strong>disease surveillance</strong>, optimize
+        <strong>clinical trial design</strong>, and inform <strong>public health policy</strong> in Africa and globally.
+      </p>
+      <p>
+        Current focuses include <em>joint spatio-temporal modeling of dengue and chikungunya</em>, and
+        <em>Mendelian Randomization</em> to study malaria’s causal impact on vitamin A deficiency.
+      </p>
+    </section>
+
+    <section id="software">
+      <h2>Software</h2>
+      <article class="card">
+        <h3>Kenya Arbovirus ST Model</h3>
+        <p>Bayesian spatio-temporal modeling toolkit for dengue & chikungunya (INLA/PyMC).</p>
+        <p class="links">
+          <a href="https://github.com/yourusername/kenya-arbovirus-st-model">Source</a>
+          <!-- <a href="#">Docs</a> -->
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>TrialDesign-FOI</h3>
+        <p>Utilities to link force of infection to vaccine trial sizing and site selection.</p>
+        <p class="links">
+          <a href="https://github.com/yourusername/trialdesign-foi">Source</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>StatGuide (templates)</h3>
+        <p>Reproducible analysis templates aligned with CONSORT/STROBE/ARRIVE checklists.</p>
+        <p class="links">
+          <a href="https://github.com/yourusername/statguide-templates">Source</a>
+        </p>
+      </article>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <ul class="pubs">
+        <li>
+          <span class="year">2025</span>
+          Agasa LO, Thuita F, Achia T, Karanja A. <em>Analysing dengue fever spread in Kenya using the Zero-Inflated Poisson model.</em> J Public Health Afr.
+          <!-- <a href="#">DOI</a> -->
+        </li>
+        <li>
+          <span class="year">2024</span>
+          Agasa LO, Abdullahi L, Mongare S, Achia T, Cheruiyot WK, Karanja A. <em>Joint spatial and spatiotemporal methods for modeling infectious diseases: A systematic review.</em> PAMJ-One Health.
+        </li>
+        <li>
+          <span class="year">Preprint</span>
+          <em>Age-stratified dengue seroprevalence to estimate force of infection in Kenya.</em>
+          <!-- <a href="#">OSF/Preprint</a> -->
+        </li>
+      </ul>
+      <p class="more">
+        Full list on <a href="https://scholar.google.com/citations?user=YP5QOCMAAAAJ&hl=en">Google Scholar</a>.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="contact">
+        <li>📧 <a href="mailto:lameckagasa@gmail.com">lameckagasa@gmail.com</a></li>
+        <li>🧾 ORCID: <a href="https://orcid.org/0000-0002-3740-8865">0000-0002-3740-8865</a></li>
+        <li>📖 Scholar: <a href="https://scholar.google.com/citations?user=YP5QOCMAAAAJ&hl=en">Profile</a></li>
+        <li>🐙 GitHub: <a href="https://github.com/lameckagasa">lameckagasa</a></li>
+      </ul>
+      <p class="small">© <span id="year"></span> Lameck Ondieki Agasa · Last updated</p>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
